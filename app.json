@@ -1,0 +1,57 @@
+{
+    "name": "Quran Radio",
+    "description": "Quran radio 24/24 in your VC",
+    "keywords": [
+        "py-tgcalls",
+        "pyrogram"
+    ],
+    "website": "https://t.me/DevZaid",
+    "repository": "https://github.com/x72x/quran-radio",
+    "success_url": "https://t.me/Y88F8",
+    "env": {
+        "API_ID": {
+            "description": "22731079",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "40f6f6599de18cdedc025fab927bb16b",
+            "required": true,
+            "value": ""
+        },
+        "SESSION_STRING": {
+            "description":  "BAFa2UcAmkntsYd6486MAZhyHRpvE-RvlG7WoWHFPI-qquRWt0kQ3TCVRXE9981FWI0dKUUjkrnXO3fTjYiyzNLkAoTI3XiUoUYqKIosWH0H0RNKisLj3pvdHHqS7wH9RDZakJ6VWnFl-j6CY5oCrXNVQ0XynkoTB7krKkE96QWibLs7WX0tttFz1MJxeQL5IrhSyaF590tci-INVXKaBKVPf_eJlbtHyqbg2Su7Mxbg7fwvrlEXxYiEo5fvBaIWP0oAfjpAr0bMLlPTrvhVSm4OuqyR6gt4oT5bKkCf1-l9n3QCVZfBh18k_cZja4hxh2ArVjapbqW0IwA8a_tLFQchL0xFmgAAAAGdrbdZAA",
+            "required": true,
+            "value": ""
+        },
+        "CHAT_ID": {
+            "description": "-1001881602112",
+            "required": true,
+            "value": ""
+        },
+        "CHANNEL_USERNAMWE": {
+            "description": "ok_lw",
+            "required": false,
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "stack": "container"
+}
